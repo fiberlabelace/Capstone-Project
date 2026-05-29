@@ -5,7 +5,7 @@ const Product = ({products, setCart}) => {
   return (
     <div className='col-3 card-ss'>
       <div className='card'>
-        <img className='card-img-top' src={products.hinhAnh} alt={products.maSP} />
+        <img className='card-img-top' src={`${import.meta.env.BASE_URL}${products.hinhAnh.startsWith('/') ? products.hinhAnh.slice(1) : products.hinhAnh}`} alt={products.maSP} />
       </div>
       <div className='card-body'>
         <h4 className='card-title card-text'>{products.tenSP}</h4>

@@ -60,7 +60,7 @@ const DetailTable = ({ item }) => {
             <td><strong>Image:</strong></td>
             <td>
               {item.hinhAnh ? (
-                <img src={item.hinhAnh} alt={item.tenSP} style={{ maxWidth: '200px', height: 'auto' }} />
+                <img src={`${import.meta.env.BASE_URL}${item.hinhAnh.startsWith('/') ? item.hinhAnh.slice(1) : item.hinhAnh}`} alt={item.tenSP} style={{ maxWidth: '200px', height: 'auto' }} />
               ) : (
                 <p>No image</p>
               )}

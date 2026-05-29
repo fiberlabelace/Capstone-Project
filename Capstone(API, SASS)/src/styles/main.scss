@@ -1,0 +1,54 @@
+@import './variables';
+@import './mixins';
+.btn-add{
+    background-color: $black;
+    color: $white;
+    border-radius: 40px;
+    border: none;
+    display: block;
+    width: 90%;
+    margin: 20px auto;
+    padding: 10px 0;
+    font-weight: 600;
+}
+.btn-cart{
+    width: clamp(100px, 10%, 10000px);
+    margin: 20px 40px;
+    margin-left: auto;
+    display: inline-block;
+}
+.btn-admin{
+    margin: 20px 10px;
+    padding: 0 20px;
+    width: auto;
+    font-size: 10px;
+    height: 20px;
+}
+
+
+.card-ss{
+    background-color: $bg-gray;
+    flex: 300px;
+    border-radius: 20px;
+    max-width: 340px;
+}
+.card-text{
+    margin: 20px 40px;
+}
+.layout{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 20px;
+    gap: 20px;
+}
+.price{
+    font-weight: 600;
+    font-size: 20px;
+    white-space: pre-wrap;
+}
+.btn-detail{
+    background-color: $white;
+    color: $black;
+    border: 1px solid $black;
+}
